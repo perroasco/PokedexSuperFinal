@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PokemonTypeActivity">
+
+    <TextView
+        android:id="@+id/type_name"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/type_damage_relations"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/type_pokemon"
+        android:text="Pokemon"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/type_pokemons"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
