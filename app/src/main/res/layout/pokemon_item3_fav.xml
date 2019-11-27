@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pokemon_item"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginBottom="30dp"
-    android:id="@+id/pokemon_item">
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/iv_pokemon_image"
         android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center" />
 
     <TextView
         android:id="@+id/tv_pokemon_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_bold"
-        android:textSize="12sp"
         android:textAlignment="center"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:textSize="12sp" />
 
     <ImageView
         android:id="@+id/detfav"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_gravity="center|right|top"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center_horizontal"
         android:onClick="onClickFavorite"
-        android:src="@drawable/favorite_empty" />
+        android:src="@drawable/favorite" />
 
 </LinearLayout>
